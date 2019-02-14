@@ -1,4 +1,4 @@
-package com.zonework.programming.api.posts.application.endpoints;
+package com.zonework.programming.api.application.post.endpoints;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

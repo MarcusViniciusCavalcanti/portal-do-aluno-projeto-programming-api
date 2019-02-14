@@ -1,0 +1,10 @@
+language: java
+jdk: openjdk10
+
+before_script:
+  - psql -c "create database programming;" -U postgres
+  - sudo -u postgres psql -c "create user application with encrypted password 'programming'"
+  - sudo -u postgres psql -c "grant all privileges on database programming to application"
+
+services:
+  - postgresql
